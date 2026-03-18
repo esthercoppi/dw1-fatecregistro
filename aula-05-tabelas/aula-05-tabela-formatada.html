@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Zebrada</title>
+
+    <!-- CSS Interno -->
+    <style>
+        /* No CSS interno, precisamos de seletores para aplicar as formatações. */
+        thead {
+            background-color: lightblue; 
+            /* se houver conflito, o inline terá prioridade */
+        }
+
+        body {
+            background-color: #dadada;
+            font-family: 'Verdana';
+            /* ou rgb */
+        }
+
+        td, th {
+            /* padding refere-se ao espaçamento */
+            padding: 6px;
+            line-height: 1.6;
+        }
+
+        /* Zebrando a tabela através das linhas pares e ímpares. EVEN é par, ODD é ímpar*/
+        tr:nth-child(even) {
+            background-color: #e8eef1;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #c9daee;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Tabela Zebrada</h1>
+    </header>
+    <body>
+        
+        <table>
+            <caption>Tabela de clientes</caption>
+            <!-- CSS inline -->
+            <thead style="background-color: black;">
+                <tr>
+                    <th colspan="3" scope="col">Dados pessoais:</th>
+                    <th colspan="2" scope="col">Endereço:</th>
+                    <th scope="col">Contato:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Nome:</th>
+                    <th>Idade:</th>
+                    <th>Profissão:</th>
+                    <th>Rua:</th>
+                    <th>Cidade:</th>
+                    <th>E-mail:</th>
+                </tr>
+                <tr>
+                    <td>Ana de Souza</td>
+                    <td>25</td>
+                    <td>Engenheira</td>
+                    <td>Av Carlos de Souza</td>
+                    <td>São Paulo/SP</td>
+                    <td>anasouza@mail.com</td>
+                </tr>
+                <tr>
+                    <td>João Ricardo</td>
+                    <td>30</td>
+                    <td>Advogado</td>
+                    <td>Rua das Flores</td>
+                    <td>Rio de Janeiro/RJ</td>
+                    <td>joaoricardo@mail.com</td>
+                </tr>
+                <tr>
+                    <td>Maria da Silva</td>
+                    <td>41</td>
+                    <td>Médica</td>
+                    <td>Rua Projetada</td>
+                    <td>Registro/SP</td>
+                    <td>mariasilva@mail.com</td>
+                </tr>
+                <tr>
+                    <td>Rafael Pereira</td>
+                    <td>19</td>
+                    <td>Estudante</td>
+                    <td>Avenida Joaquim Ferreira</td>
+                    <td>Belo Horizonte/MG</td>
+                    <td>rafaelpereira@mail.com</td>
+                </tr>
+                <tr>
+                    <td>Rodrigo Júnior</td>
+                    <td>33</td>
+                    <td>Fisioterapeuta</td>
+                    <td>Rua A</td>
+                    <td>Cajati/SP</td>
+                    <td>rodrigojunior@mail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="6">Cadastrado em: 17/03/2026</th>
+            </tfoot>
+        </table>
+
+    </body>
+    <footer></footer>
+</body>
+</html>
