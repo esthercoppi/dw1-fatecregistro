@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulários</h1>
+    </header>
+    <main>
+        <section>
+            <!-- Formulário de cadastro -->
+             <form action="sucesso.html" method="POST">
+                <fieldset>
+                    <legend>Dados pessoais</legend><br>
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o seu nome completo" required><br>
+                    <label for="CPF">CPF:</label><br>
+                    <input type="number" name="CPF" id="CPF" placeholder="Digite seu CPF" required><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="Informe seu e-mail" required><br>
+                    <label for="password">Senha:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Insira sua senha" required><br>
+                    <label for="nascimento">Data de nascimento:</label><br>
+                    <input type="date" name="nascimento" id="nascimento" placeholder="Digite sua data de nascimento:" required><br>
+                    <label for="genero">Gênero:</label><br>
+                    <input type="radio" name="genero" id="masc" value="m">Masculino
+                    <input type="radio" name="genero" id="fem" value="f">Feminino
+                    <input type="radio" name="genero" id="none" value="n">Prefiro não informar
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Dados do produto</legend>
+                    <label for="quantidade">Quantidade:</label><br>
+                    <input type="number" name="quantidade" id="quantidade" min="1" max="10"><br>
+                    <label for="color">Cor do produto:</label><br>
+                    <input type="color" name="color" id="color"><br>
+                    <label for="entrega">Agendar entrega para:</label><br>
+                    <input type="datetime-local" name="entrega" id="entrega"><br>
+                    <label for="frete">Selecione o frete:</label><br>
+                    <select name="frete" id="frete">
+                        <option value="pac">PAC</option>
+                        <option value="sedex">Sedex</option>
+                        <option value="sedex10">Sedex 10</option>
+                    </select><br><br>
+                    <label for="observacoes">Observações:</label><br>
+                    <textarea rows="4" cols="40" name="observacoes" id="observacoes" placeholder="Escreva aqui observações sobre a entrega ou sobre o produto."></textarea><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Termos de Uso e Notificações</legend>
+                    <a href="termos.html">
+                        <button type="button">Ler os Termos de Uso</button><br><br>
+                    </a>
+                    <label for="termos">Termos de Uso da Plataforma</label><br>
+                    <input type="checkbox" name="termos" id="termos" required>Declaro que li e aceito os termos de uso da plataforma.
+                    <br><br>
+                    <label for="novidades">Notificações</label><br>
+                    <input type="checkbox" name="novidades" id="novidades">Desejo receber notificações sobre novos produtos relacionados via e-mail.
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Envio do formulário</legend><br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+             </form>
+        </section>
+    </main>
+    <footer>&copy; Forms - 2026.</footer>
+</body>
+</html>
