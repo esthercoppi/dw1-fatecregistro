@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Básicos CSS3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* esse seria o css internal */
+    </style>
+</head>
+<body>
+    <!-- Existe CSS inline, internal e external -->
+    <header>
+        <h1>Demonstração de Seletores Básicos</h1>
+    </header>
+
+    <main>
+        <h2>Exemplos</h2>
+        <h3>Seletor de elemento</h3>
+        <p>Este parágrafo é estilizado pelo seletor de elemento (p).</p>
+        <p>O elemento "filho" se sobrepôs.</p>
+
+        <section>
+            <p>Este é um outro parágrafo, que foi estilizado pelos seletores (section) e (p).</p>
+        </section>
+
+        <h3>Seletor de classe</h3>
+        <p class="destaque">Este parágrafo está sendo estilizado pela classe "destaque".</p>
+        <p class="destaque">Outro parágrafo com a mesma classe de "destaque".</p>
+        <p>Este parágrafo não tem classe.</p>
+
+        <h3>Seletor de ID</h3>
+        <!-- div cria uma divisão na página, mas não é semântica -->
+        <div id="unico">
+            Esta div possui um ID único e é estilizada especificamente. O ID identifica individualmente, para estilizar elementos únicos. A classe pode ser utilizada em vários elementos.
+        </div>
+
+        <section class="post">
+            <h2>Seção de Exemplo</h2>
+            <p>Conteúdo da seção.</p>
+        </section>
+
+        <h3>Agrupando os seletores</h3>
+        <h4>Subtítulo 1</h4>
+        <h5>Subtítulo 2</h5>
+        <h6>Subtítulo 3</h6>
+
+        <br>
+
+        <div class="observacoes">
+            <h3>Tipos de Seletores Básicos</h3>
+            <ul>
+                <li>Elementos: seleciona todos os selementos daquele tipo.</li>
+                <li>Classe: pode ser reutilizado em múltiplos elementos.</li>
+                <li>ID: utiliza um elemento único.</li>
+                <li>Agrupamento de seletores: aplica o mesmo estilo a múltiplos seletores.</li>
+            </ul>
+        </div>
+
+    </main>
+    
+</body>
+</html>
